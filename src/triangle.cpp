@@ -318,6 +318,10 @@ class HelloTriangleApplication {
         vkDeviceWaitIdle(device);
 
         cleanupSwapChain();
+        
+        vkDestroyImageView(device, depthImageView, nullptr);
+        vkDestroyImage(device, depthImage, nullptr);
+        vkFreeMemory(device, depthImageMemory, nullptr);
 
         createSwapChain();
         createSwapchainImageViews();
