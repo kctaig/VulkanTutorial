@@ -11,10 +11,10 @@ set(VK_SDK_INCLUDE ${VK_SDK_PATH}/Include)
 set(VK_SDK_LIB ${VK_SDK_PATH}/Lib/vulkan-1.lib)
 
 # glm and glfw3
-set(GLM_PATH "D:/Tools/glm-1.0.2")
+set(GLM_PATH "D:/Tools/glm/glm-1.0.2")
 set(GLM_INCLUDE ${GLM_PATH})
 
-set(GLFW_PATH "D:/Tools/glfw-3.4.bin.WIN64")
+set(GLFW_PATH "D:/Tools/glfw/glfw-3.4")
 set(GLFW_INCLUDE "${GLFW_PATH}/include")
 set(GLFW_LIBRARY  "${GLFW_PATH}/lib-vc2022/glfw3.lib")
 
