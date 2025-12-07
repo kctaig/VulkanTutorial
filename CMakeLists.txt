@@ -33,6 +33,9 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
 
 # include
 target_include_directories(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/include)
+target_include_directories(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/3dparty)
 target_include_directories(${PROJECT_NAME} PRIVATE ${VK_SDK_INCLUDE})
 target_include_directories(${PROJECT_NAME} PRIVATE ${GLM_PATH_INCLUDE})
 target_include_directories(${PROJECT_NAME} PRIVATE ${GLFW_INCLUDE})
+
+add_subdirectory(3dparty)
