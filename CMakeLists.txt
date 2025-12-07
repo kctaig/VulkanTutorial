@@ -23,6 +23,5 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
 )
 
 # include
-target_include_directories(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/include)
 target_include_directories(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/external)
 target_include_directories(${PROJECT_NAME} PRIVATE ${Vulkan_INCLUDE_DIR})
