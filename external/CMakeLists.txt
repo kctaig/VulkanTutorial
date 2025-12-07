@@ -5,8 +5,6 @@ set(GLFW_BUILD_DOCS OFF CACHE BOOL "Build GLFW docs" FORCE)
 set(GLFW_INSTALL OFF CACHE BOOL "Install GLFW" FORCE)
 
 add_subdirectory(glfw)
-add_subdirectory(tinyobjloader)
-add_subdirectory(glm)
 
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/tinyobjloader)
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/glm)
